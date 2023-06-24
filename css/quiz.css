@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+body {
+  background: url(https://wallpapercave.com/wp/HGMtO8W.jpg) fixed;
+  background-size: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+.clock {
+  color: black;
+}
+.nav-link {
+  color: #dddddd;
+}
+p {
+  margin: 5%;
+  font-size: 1.2em;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: cornflowerblue;
+  color: white;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+}
+.question {
+  margin-bottom: 20px;
+}
+.result-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.result {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.element {
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  float: left;
+
+  position: relative;
+}
+
+.element image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+button {
+  margin-right: 10px;
+  color: black;
+}
+
+img {
+  float: left;
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+}

@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: url(https://wallpapercave.com/wp/HGMtO8W.jpg) fixed;
+  background-size: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+
+.nav-link {
+  color: #dddddd;
+}
+
+p {
+  margin: 5%;
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5em;
+  line-height: 1.4em;
+  font-weight: 300;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+iframe {
+  margin: 10px;
+  width: 100%;
+}
+
+.btn {
+  font-size: 30px;
+  border: 2px solid white;
+  background: none;
+  letter-spacing: 7px;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  padding: 13px 40px;
+  margin-top: 30px;
+  color: antiquewhite;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 100px 100px 100px 100px;
+}
+
+.text {
+  position: relative;
+  max-width: 700px;
+  color: aliceblue;
+}
+
+.text article {
+  font-size: 28px;
+  line-height: 25px;
+  margin-top: 18px;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  max-width: 400px;
+  margin: 50px 10px;
+}
+
+.card-container {
+  display: grid;
+  perspective: 700px;
+  padding-bottom: 30px;
+}
+
+.card-title p,
+h4,
+h5 {
+  font-family: "Nunito" !important;
+  text-align: center;
+  color: white;
+}
+
+.card-text {
+  font-family: "Nunito" !important;
+  text-align: center;
+  color: white;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+  background-color: #383428 !important;
+}
+
+.back {
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+  background-color: #383428 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}
+
+.btn {
+  color: #383428 !important;
+}
+
+.btn:hover {
+  color: white !important;
+}
+
+.rating {
+  text-decoration: none;
+  color: #ff9800 !important;
+}
+
+.rating:hover {
+  text-decoration: none;
+  color: #ffcc80 !important;
+}
+
+.movie {
+  position: fixed;
+  z-index: -1;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+    font-size: 16px;
+  }
+
+  .text article {
+    font-size: 14px;
+  }
+
+  .grid-wrapper {
+    display: none;
+  }
+
+  iframe {
+    width: 100%;
+    height: 200px;
+  }
+}

@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: url(https://wallpapercave.com/wp/HGMtO8W.jpg) fixed;
+  background-size: 100%;
+  font-family: Arial, sans-serif;
+  color: white;
+  backdrop-filter: blur(5px);
+}
+.panel {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.question-container {
+  margin: 10px;
+  padding: 5px;
+  width: 80vw;
+  height: 10vh;
+  font-size: x-large;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.result {
+  margin: 10px;
+  padding: 5px;
+  width: 80vw;
+  height: 10vh;
+  text-align: center;
+  font-size: 50px;
+}
+.option-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+  padding: 5px;
+  width: 80vw;
+  height: 20vh;
+  backdrop-filter: blur(5px);
+}
+.option {
+  padding: 10px;
+  width: 15vw;
+  height: 10vh;
+  font-size: larger;
+  background-color: cadetblue;
+  border-radius: 25%;
+}
+.option:hover {
+  backdrop-filter: blur(5px);
+}
+.navigation {
+  width: 80vw;
+  height: 10vh;
+  margin: 10px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  backdrop-filter: blur(5px);
+}
+
+.evaluate,
+.next {
+  width: 30vw;
+  height: 8vh;
+  padding: 5px;
+  font-size: larger;
+}
+.evaluate {
+  background-color: #50dbb4;
+}
+.next {
+  color: white;
+  background-color: #bf3325;
+}
